@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Retail.Model.Beli">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="ItemBelis" Type="Retail.Model.ItemBeli">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.318" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Supplier" Type="Retail.Model.Supplier">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.527" Y="0.008" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAIAAAAAAAAAAAgAAEAAAACAAEAAAAAA=</HashCode>
+      <FileName>Beli.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Supplier" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ItemBelis" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Retail.Model.ItemBeli">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Beli" Type="Retail.Model.Beli">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.558" Y="0.05" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Barang" Type="Retail.Model.Barang">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.589" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACAAAAAAAQAABAAAAAAAAAkAEAAgAAA=</HashCode>
+      <FileName>ItemBeli.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beli" />
+      <Property Name="Barang" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Retail.Model.Supplier">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Belis" Type="Retail.Model.Beli">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.61" Y="0.081" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAIAAAAAAAAAIAAAAAAAAAASAAAAAAAAA=</HashCode>
+      <FileName>Supplier.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Belis" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Retail.Model.Barang">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <AssociationLine Name="ItemBelis" Type="Retail.Model.ItemBeli">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.62" Y="0.893" Height="0.16" Width="1.058" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAACAABAAAAAAAAgAAQAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Barang.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ItemBelis" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
